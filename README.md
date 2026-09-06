@@ -11,3 +11,5 @@
 - 9e3ca19 basic md layout done
 - 0402704 fixed nav bar text to center
 - af2bb19 added logos. layout for lg screen size done
+- a76d920 added background img to folder, added header, nav, logo, and the bg image to main.
+- a8bfe59 init commit
