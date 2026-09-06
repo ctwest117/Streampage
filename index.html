@@ -16,7 +16,7 @@
                     },
                 colors: {
                     nerdflix: {
-                        background: '#111827',
+                        text: '#fff',
                         main: '#E7000B',
                     },
                 }
@@ -29,18 +29,18 @@
     <body class="m-0 text-white/100 font-nerd font-[100]">
     <header class="fixed z-20 flex justify-center items-center top-0 w-screen h-16 blur-bg-md rounded-lg bg-gradient-to-t from-transparent to-slate-950 lg:ml-0 lg:w-screen md:ml-40 md:w-[calc(100%-10rem)] sm:w-screen">
         <div class="relative flex justify-between items-center w-[95%]">
-            <button id="menu-button" class="h-16 md:hidden sm:inline-flex">&#x2630;</button>
-            <a href='#' class="lg:static lg:translate-x-0 md:absolute md:left-1/2 md:-translate-x-1/2 sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+            <button id="menu-button" class="h-auto px-2 rounded-lg md:hidden sm:inline-flex hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg hover:shadow-2xl">&#x2630;</button>
+            <a href='#' class="ml-auto lg:static lg:ml-0 lg:translate-x-0 md:absolute md:left-1/2 md:-translate-x-1/2">
                 <picture>
                     <source media="(min-width: 768px)" srcset="images/logo_long.png">
                     <img src="images/logo_nerdy.png" class="h-16 mt-1" alt="Nerdflix">
                 </picture>
             </a>
-            <div id="navcon" class="navcon hidden absolute left-0 top-full z-10 w-40 flex-col m-0 bg-transparent p-3 lg:static lg:h-auto lg:w-auto lg:flex-row lg:rounded-lg lg:bg-transparent md:fixed md:left-0 md:top-0 md:flex md:h-screen md:w-40 md:bg-slate-950/90 md:p-3">
-                <nav class="flex flex-col gap-3 lg:flex-row">
-                    <a href="#" class="rounded-lg bg-nerdflix-main px-5 py-2 text-center md:w-32 md:px-3">Sign In</a>
-                    <a href="#" class="border-2 border-solid rounded-lg px-5 py-2 text-center md:w-32 md:px-3">Create Account</a>
-                    <a href="#" class="rounded-lg bg-nerdflix-main px-5 py-2 text-center md:w-32 md:px-3">Browse as guest</a>
+            <div id="navcon" class="navcon hidden absolute left-1/2 top-0 z-10 flex h-16 w-auto -translate-x-1/2 flex-row items-center m-0 bg-transparent p-3 lg:static lg:h-auto lg:w-auto lg:translate-x-0 lg:flex-row lg:rounded-lg lg:bg-transparent md:fixed md:left-0 md:top-0 md:flex md:h-screen md:w-40 md:translate-x-0 md:flex-col md:bg-slate-950/90 md:p-3">
+                <nav class="flex flex-row gap-3 md:flex-col lg:flex-row">
+                    <a href="#" class="h-10 whitespace-nowrap rounded-lg bg-nerdflix-main px-5 py-2 text-center md:w-32 md:px-3 hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg hover:shadow-2xl">Sign In</a>
+                    <a href="#" class="h-10 whitespace-nowrap rounded-lg border-2 border-solid px-5 py-2 text-center md:w-32 md:px-3 hover:bg-nerdflix-main hover:border-t-0 hover:border-l-0">Create Account</a>
+                    <a href="#" class="h-10 whitespace-nowrap rounded-lg bg-nerdflix-main px-5 py-2 text-center md:w-32 md:px-3 hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg hover:shadow-2xl">Browse as guest</a>
                 </nav>
             </div>
 
@@ -61,7 +61,7 @@
                     required
                     class="w-72 rounded-l-lg border-2 border-white/60 bg-black/40 px-4 py-2 outline-none placeholder:text-white/70"
                 >
-                <button type="submit" class="rounded-r-lg bg-nerdflix-main px-5 py-[calc(0.5rem+2px)]">Get Started</button>
+                <button type="submit" class="rounded-r-lg bg-nerdflix-main px-5 p-[calc(0.5rem+2px)] h-[calc(2.5rem+4px)] hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg ">Get Started</button>
             </form>
         </section>
     </main>
