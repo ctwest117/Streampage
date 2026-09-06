@@ -27,12 +27,17 @@
     <title>Nerdflix</title>
 </head>
 <body class="m-0 text-white/100 font-nerd font-[100] ">
-    <header class="fixed z-20 flex justify-center items-center top-0 md:ml-40 lg:ml-0 lg:w-screen md:w-[calc(100%-10rem)] sm:w-screen h-16 blur-bg-md rounded-lg bg-gradient-to-t from-transparent to-slate-950">
+    <header class="fixed z-20 flex justify-center items-center top-0 w-screen md:ml-40 lg:ml-0 lg:w-screen md:w-[calc(100%-10rem)] sm:w-screen h-16 blur-bg-md rounded-lg bg-gradient-to-t from-transparent to-slate-950">
         <div class="relative flex justify-between items-center w-[95%]">
             <button id="menu-button" class="md:hidden sm:inline-flex h-16">&#x2630;</button>
-            <a href='#' class="sm:absolute sm:left-1/2 sm:-translate-x-1/2 md:absolute md:left-1/2 md:-translate-x-1/2 lg:static lg:translate-x-0"><img src="images/logo_long.png" class="h-16"></a>
-            <div id="navcon" class="navcon hidden flex-row m-0 md:fixed md:left-0 md:top-0 md:z-10 md:flex md:h-screen md:w-40 md:bg-slate-950/90 md:p-3 lg:static lg:h-auto lg:w-auto lg:rounded-lg lg:bg-transparent lg:p-0">
-                <nav class="flex flex-row gap-3 md:flex-col gap-3 lg:flex-row">
+            <a href='#' class="sm:absolute sm:left-1/2 sm:-translate-x-1/2 md:absolute md:left-1/2 md:-translate-x-1/2 lg:static lg:translate-x-0">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/logo_long.png">
+                    <img src="images/logo_nerdy.png" class="h-16 mt-1" alt="Nerdflix">
+                </picture>
+            </a>
+            <div id="navcon" class="navcon hidden absolute bg-transparent left-0 top-full z-10 w-40 flex-col m-0 bg-slate-950/90 p-3 md:fixed md:left-0 md:top-0 md:flex md:h-screen md:w-40 md:bg-slate-950/90 md:p-3 lg:static lg:h-auto lg:w-auto lg:flex-row lg:rounded-lg lg:bg-transparent lg:p-0">
+                <nav class="flex gap-3 flex-col gap-3 lg:flex-row">
                     <a href="#" class="rounded-lg bg-nerdflix-main px-5 py-2 md:w-32 md:px-3 text-center">Sign In</a>
                     <a href="#" class="border-2 border-solid rounded-lg px-5 py-2 md:w-32 md:px-3 text-center">Create Account</a>
                     <a href="#" class="rounded-lg bg-nerdflix-main px-5 py-2 md:w-32 md:px-3 text-center">Browse as guest</a>
@@ -43,8 +48,8 @@
     </header>
     <main class="sm:ml-0 sm:w-screen md:ml-40 lg:ml-0 lg:w-screen md:w-[calc(100%-10rem)] flex justify-center items-center bg-[url('images/bg_image.png')] bg-cover bg-no-repeat bg-center">
         <section class="flex flex-col justify-center items-center w-screen h-screen blur-bg-lg">
-            <h1 class="text-6xl sm:text-5xl md:text-[3rem] lg:text-6xl my-8 text-center">Movies and TV Shows for  the Nerdiest of Nerds</h1>
-            <h2 class="text-4xl sm:text-3xl my-8">Create an account or sign in now</h2>
+            <h1 class="text-3xl sm:text-[2.5rem] md:text-[3rem] lg:text-6xl my-8 text-center">Movies and TV Shows for  the Nerdiest of Nerds</h1>
+            <h2 class="text-2xl sm:text-[1.75rem] md:text-4xl my-8">Create an account or sign in now</h2>
             <form id="email-form" class="flex items-center gap-0 blur-bg-lg rounded-l-lg">
                 <label for="email" class="sr-only">Email address</label>
                 <input
@@ -56,7 +61,7 @@
                     required
                     class="w-72 rounded-l-lg border-2 border-white/60 bg-black/40 px-4 py-2 outline-none placeholder:text-white/70"
                 >
-                <button type="submit" class="rounded-r-lg bg-red-600 px-5 py-[calc(0.5rem+2px)]">Get Started</button>
+                <button type="submit" class="rounded-r-lg bg-nerdflix-main px-5 py-[calc(0.5rem+2px)]">Get Started</button>
             </form>
         </section>
     </main>
