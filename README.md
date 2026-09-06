@@ -1,7 +1,11 @@
 ### My Streaming site: NERDFLIX
 
-- f45535a (HEAD -> main, origin/main) added html validator
-- c0f6948 (origin/small, small) added hover states to buttons and anchors
+
+- 5930691 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/ctwest117/Streampage added readme
+- 403494a added focus state, changed js button to follow instructions better
+- df4d987 Add README.md with log
+- f45535a added html validator
+- c0f6948 added hover states to buttons and anchors
 - 494fb22 had ai organize my tailwind by default, then lg-sm
 - fdd3921 made logo cnange to a single letter variant at md breakpoint
 - f76ea06 dont know much js but ai walked me through making the event listener
