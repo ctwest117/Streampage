@@ -1,4 +1,4 @@
-### My Streaming sit: NERDFLIX//
+### My Streaming site: NERDFLIX//
 
 - f45535a (HEAD -> main, origin/main) added html validator/
 - c0f6948 (origin/small, small) added hover states to buttons and anchors/
