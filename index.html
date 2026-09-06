@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                        nerd: ['"Bebas Neue"', 'sans-serif']
+                    },
+                colors: {
+                    nerdflix: {
+                        background: '#111827',
+                        main: '#E7000B',
+                    },
+                }
+            }
+        }
+    };
+</script>
     <title>Nerdflix</title>
 </head>
-<body class="m-0 text-white/100">
-    <header class="fixed flex justify-between items-center top-0 w-screen bg-white/20 blur-bg-md rounded-lg">
-        <h1 class="text-red-500">Nerdflix</h1>
-        <nav>
-            <button>Sign In</button>
-            <button>Create Account</button>
-        </nav>
+<body class="m-0 text-white/100 font-nerd font-[100]">
+    <header class="fixed flex justify-center items-center top-0 w-screen h-16  blur-bg-md rounded-lg bg-gradient-to-t from-transparent to-slate-950">
+        <div class="flex justify-between items-center w-[95%]">
+            <button class="hidden h-16">&#x2630;</button>
+            <a href='#'><img src="images/logo_long.png" class="h-16"></a>
+            <div class="navcon flex flex-row relative m-0">           
+                <nav class="flex gap-3 flex-row">
+                    <button class="rounded-lg bg-nerdflix-main px-5 py-2">Sign In</button>
+                    <button class="border-2 border-solid rounded-lg px-5 py-2">Create Account</button>
+                    <button class="rounded-lg bg-nerdflix-main px-5">Browse as guest</button>
+                </nav>
+            </div>
+
+        </div>
     </header>
     <main>
-        <section class="flex flex-col justify-center items-center w-screen h-screen bg-[url('images/bg_image.png')] bg-center">
-            <h1>Movies and Shows for  the Nerdiest of Nerds</h1>
-            <h2>Create an account or sign in now</h2>
-            <p></p>
-            <form id="email-form" class="flex flex-col items-center gap-3" novalidate>
+        <section class="flex flex-col justify-center items-center w-screen h-screen bg-[url('images/bg_image.png')] bg-fit bg-center">
+            <h1 class="text-6xl my-8 text-center">Movies and TV Shows for  the Nerdiest of Nerds</h1>
+            <h2 class="text-4xl my-8">Create an account or sign in now</h2>
+            <form id="email-form" class="flex items-center gap-0 blur-bg-lg rounded-lg">
                 <label for="email" class="sr-only">Email address</label>
                 <input
                     id="email"
@@ -30,9 +56,7 @@
                     required
                     class="w-72 rounded border-2 border-white/60 bg-black/40 px-4 py-2 outline-none placeholder:text-white/70"
                 >
-                <button type="submit" class="rounded bg-red-600 px-5 py-2 font-semibold">
-                    Get Started
-                </button>
+                <button type="submit" class="rounded-lg bg-red-600 px-5 py-2">Get Started</button>
             </form>
         </section>
     </main>
