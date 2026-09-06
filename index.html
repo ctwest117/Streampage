@@ -29,7 +29,7 @@
     <body class="m-0 text-white/100 font-nerd font-[100]">
     <header class="fixed z-20 flex justify-center items-center top-0 w-screen h-16 blur-bg-md rounded-lg bg-gradient-to-t from-transparent to-slate-950 lg:ml-0 lg:w-screen md:ml-40 md:w-[calc(100%-10rem)] sm:w-screen">
         <div class="relative flex justify-between items-center w-[95%]">
-            <button id="menu-button" class="h-auto px-2 rounded-lg md:hidden sm:inline-flex hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg hover:shadow-2xl">&#x2630;</button>
+            <button id="menu-button" aria-label="Toggle navigation" aria-controls="navcon" aria-expanded="false" class="h-auto px-2 rounded-lg md:hidden sm:inline-flex hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg hover:shadow-2xl">&#x2630;</button>
             <a href='#' class="ml-auto lg:static lg:ml-0 lg:translate-x-0 md:absolute md:left-1/2 md:-translate-x-1/2">
                 <picture>
                     <source media="(min-width: 768px)" srcset="images/logo_long.png">
@@ -59,7 +59,7 @@
                     placeholder="Email Adress"
                     autocomplete="email"
                     required
-                    class="w-72 rounded-l-lg border-2 border-white/60 bg-black/40 px-4 py-2 outline-none placeholder:text-white/70"
+                    class="w-72 rounded-l-lg border-2 border-white/60 bg-black/40 px-4 py-2 outline-none outline-offset-[-0.2rem] placeholder:text-white/70 focus:outline-nerdflix-main"
                 >
                 <button type="submit" class="rounded-r-lg bg-nerdflix-main px-5 p-[calc(0.5rem+2px)] h-[calc(2.5rem+4px)] hover:bg-transparent hover:border-b-solid hover:border-b-2 hover:border-r-solid hover:border-r-2 hover:blur-bg-lg ">Get Started</button>
             </form>
@@ -70,7 +70,8 @@
         const navcon = document.getElementById('navcon');
 
         menuButton.addEventListener('click', () => {
-            navcon.classList.toggle('hidden');
+            const isOpen = navcon.classList.toggle('hidden') === false;
+            menuButton.setAttribute('aria-expanded', isOpen);
         });
     </script>
 </body>
