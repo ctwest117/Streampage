@@ -1,5 +1,5 @@
 ### My Streaming site: NERDFLIX
-##Chose option B
+##Chose option B 
 
 - 5930691 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'main' of https://github.com/ctwest117/Streampage added readme
 - 403494a added focus state, changed js button to follow instructions better
